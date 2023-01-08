@@ -9,12 +9,11 @@ import os
 # using absolute imports, therefore adding root to python path
 import sys
 
-import jsonpickle as jsonpickle
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))  # NOQA
 
 from py_ip_validator.mets import MetsValidator
 from py_ip_validator.rules import ValidationProfile
 
-sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))  # NOQA
 
 from py_ip_validator import LOGGER
 from py_ip_validator import information_package as IP
@@ -103,6 +102,7 @@ def main():
     parser = argparse.ArgumentParser(description='E-ARK Python Information Package validation')
 
     parser.add_argument('--input', "-i", type=str, help='Information package name', required=True)
+    parser.add_argument('--output', "-o", type=str, help='Report result file (JSON format)', required=False)
 
     args = parser.parse_args()
 
@@ -112,7 +112,12 @@ def main():
         raise FileNotFoundError(msg)
     else:
         result = validate(args.input)
-        print(json.dumps(result, indent=4))
+        if args.output:
+            with open(args.output, "w") as outfile:
+                outfile.write(json.dumps(result, indent=4))
+            print("Result file created: %s" % args.output)
+        else:
+            print(json.dumps(result, indent=4))
 
 
 if __name__ == '__main__':

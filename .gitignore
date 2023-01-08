@@ -6,5 +6,6 @@ history-eark.txt
 sw/*
 venv/*
 venv/bin/*
+.idea
 
 

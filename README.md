@@ -57,6 +57,8 @@ input
     └── schemas
 ```
 
+If the output paramter (`-o`) is specified, the validation result report (JSON format) is written to a file. 
+
 ### Running tests
 
 You can run unit tests by:

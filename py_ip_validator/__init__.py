@@ -31,6 +31,6 @@ import os
 from logging.config import fileConfig
 
 ROOT = os.path.split(os.path.abspath(os.path.dirname(__file__)))[0]
-
-fileConfig(os.path.join(ROOT, 'logging_config.ini'))
+#print("Expecting file at: %s" % os.path.join(ROOT, 'logging_config.ini'))
+#fileConfig(os.path.join(ROOT, 'logging_config.ini'))
 LOGGER = logging.getLogger()
