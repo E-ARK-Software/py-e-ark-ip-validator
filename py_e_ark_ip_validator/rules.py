@@ -32,7 +32,7 @@ from lxml.isoschematron import Schematron
 
 from importlib_resources import files
 
-import py_ip_validator.resources.schematron as SCHEMATRON
+import py_e_ark_ip_validator.resources.schematron as SCHEMATRON
 
 SCHEMATRON_NS = "{http://purl.oclc.org/dsdl/schematron}"
 SVRL_NS = "{http://purl.oclc.org/dsdl/svrl}"

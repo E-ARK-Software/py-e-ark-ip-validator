@@ -26,7 +26,7 @@
 import json
 import re
 
-from py_ip_validator.rules import Severity
+from py_e_ark_ip_validator.rules import Severity
 
 STRUCT_ERRORS = {
     1: """Any Information Package MUST be included within a single physical root

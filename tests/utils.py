@@ -23,7 +23,7 @@
 # under the License.
 #
 """Module that holds common utilities for unit testing."""
-from py_ip_validator.rules import Severity
+from py_e_ark_ip_validator.rules import Severity
 
 def contains_rule_id(error_list, rule_id, severity=Severity.Error):
     """Check that a particular error with specified severity is present in a list

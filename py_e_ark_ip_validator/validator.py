@@ -11,12 +11,12 @@ import sys
 
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), ".."))  # NOQA
 
-from py_ip_validator.mets import MetsValidator
-from py_ip_validator.rules import ValidationProfile
+from py_e_ark_ip_validator.mets import MetsValidator
+from py_e_ark_ip_validator.rules import ValidationProfile
 
 
-from py_ip_validator import LOGGER
-from py_ip_validator import information_package as IP
+from py_e_ark_ip_validator import LOGGER
+from py_e_ark_ip_validator import information_package as IP
 
 
 def get_report(details, schema_result, schema_errors, prof_names, schematron_result, profile_results):

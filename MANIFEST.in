@@ -1,4 +1,4 @@
 include logging_config.ini
-include py_ip_validator/resources/*.xml
-include py_ip_validator/resources/schemas/*.xsd
+include py_e_ark_ip_validator/resources/*.xml
+include py_e_ark_ip_validator/resources/schemas/*.xsd
 settings/settings.cfg

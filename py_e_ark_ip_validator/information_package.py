@@ -30,8 +30,8 @@ import tarfile
 import tempfile
 import zipfile
 
-from py_ip_validator.struct_errors import StructError
-from py_ip_validator.rules import Severity
+from py_e_ark_ip_validator.struct_errors import StructError
+from py_e_ark_ip_validator.rules import Severity
 
 BUFF_SIZE = 1024 * 64
 

@@ -1,7 +1,12 @@
-E-ARK Python IP Validator
+E-ARK Python Information Package Validator
 =========================
 
 Core package and command line utility for E-ARK Information Package validation.
+
+The validation core component implements validation rules defined by E-ARK specifications which can be found on the
+website of the Digital Information LifeCycle Interoperability Standards Board (DILCIS Board):
+
+https://dilcis.eu/specifications/
 
 Quick Start
 -----------
@@ -37,7 +42,7 @@ pip install -r requirements.txt
 From the command line do:
 
 ```shell
-python py_ip_validator/validator.py -i <path_to_directory_or_package>
+python py_e_ark_ip_validator/validator.py -i <path_to_directory_or_package>
 ```
 
 If `input` is a directory, it must contain a single folder which contains the information package (and no other files or folders):

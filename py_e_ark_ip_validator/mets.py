@@ -30,7 +30,7 @@ from lxml import etree
 
 from importlib_resources import files
 
-import py_ip_validator.resources.schemas as SCHEMA
+import py_e_ark_ip_validator.resources.schemas as SCHEMA
 
 XLINK_NS = 'http://www.w3.org/1999/xlink'
 METS_NS = 'http://www.loc.gov/METS/'

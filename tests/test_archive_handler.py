@@ -27,8 +27,8 @@ from enum import Enum
 import os
 import unittest
 
-from py_ip_validator import information_package as IP
-from py_ip_validator.rules import Severity
+from py_e_ark_ip_validator import information_package as IP
+from py_e_ark_ip_validator.rules import Severity
 
 MIN_TAR_SHA1 = '47ca3a9d7f5f23bf35b852a99785878c5e543076'
 

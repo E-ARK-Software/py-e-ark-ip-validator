@@ -25,8 +25,8 @@
 """Module containing tests covering the manifest class."""
 import unittest
 
-from py_ip_validator import information_package as IP
-from py_ip_validator.rules import Severity
+from py_e_ark_ip_validator import information_package as IP
+from py_e_ark_ip_validator.rules import Severity
 from tests.utils import contains_rule_id
 
 class ManifestClassTests(unittest.TestCase):

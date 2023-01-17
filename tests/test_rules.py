@@ -26,7 +26,7 @@ import unittest
 
 from importlib_resources import files
 
-from py_ip_validator import rules as SC
+from py_e_ark_ip_validator import rules as SC
 
 import tests.resources.schematron as SCHEMATRON
 import tests.resources.xml as XML
